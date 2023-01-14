@@ -21,3 +21,16 @@ a {
 button {
     padding: 0px;
 }
+
+.general__btn {
+    padding: 12px 20px 12px 20px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid $focus-color;
+    color: $secondary-text-color;
+    &:hover,
+    &:focus {
+        color: $primary-text-color;
+        background-color: $focus-color;
+    }
+}
