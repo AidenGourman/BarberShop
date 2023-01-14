@@ -1,0 +1,115 @@
+@media screen and (min-width:150px) {
+    .team{
+        margin: auto;
+        width: 480px;
+        padding-top:100px;
+        padding-bottom: 36px;
+        background-color: $second-background-color;
+    }
+
+    .team__subtitle{
+        display: flex;
+        margin-left: 31px;
+
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+
+        color: $secondary-text-color;
+
+        &::before {
+            content: "";
+            display: block;
+            margin-right: 20px;
+            width: 60px;
+            height: 6.5px;
+            border-bottom: 1px solid $secondary-text-color;
+            }
+    }
+
+    .team__title{
+        margin-left: 31px;
+        margin-bottom: 44px;
+        margin-top: 20px;
+
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+
+        color: $secondary-text-color;
+    }
+
+    .team__image{
+       margin-left: 31px;
+       
+    }
+
+    .team__name{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.38;
+        letter-spacing: 0.02em;
+
+        color: $secondary-text-color;
+    }
+
+    .team__role{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.35;
+        letter-spacing: 0.02em;
+
+        color: $focus-color;
+    }
+
+    .teamnetwork{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 64px;
+    }
+
+    .teamnetwork__item{
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    .teamnetwork__link{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        background-color: $button-background-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .teamnetwork__item
+    :hover,
+    :focus .teamnetwork__icon {
+        fill: $focus-color;
+    }
+
+
+    .teamnetwork__icon{
+        display: flex;
+
+        transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
