@@ -1,0 +1,116 @@
+@media screen and (min-width:150px) {
+    .statistic{
+        margin: auto;
+        width: 480px;
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+
+    .statistic__subtitle {
+        display: flex;
+        margin-left: 31px;
+
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+
+    &::before {
+        content: "";
+        display: block;
+        margin-right: 20px;
+        width: 60px;
+        height: 6.5px;
+        border-bottom: 1px solid $secondary-text-color;
+        }
+    }
+
+    .statistic__title{
+        margin-top: 20px;
+        margin-left: 31px;
+
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+
+        color: $secondary-text-color;
+    }
+
+    .statistic__text{
+        margin-top: 20px;
+        margin-left: 31px;
+        margin-right: 31px;
+
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+
+        color: $third-text-color;
+    }
+
+    .statistic__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .statistic__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 31px;
+        margin-bottom: 30px;
+        width: 193px;
+        height: 133px;
+        background-color: $second-background-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .statistic__item:nth-child(-n + 2){
+        margin-top: 44px;
+    }
+
+    .statistic__item:nth-child(2){
+        margin-top: 79px;
+    }
+
+    .statistic__item:nth-child(3){
+        margin-top: -30px;
+    }
+
+    .statistic__item:nth-child(4){
+        margin-bottom: 0px;
+    }
+
+    .statistic__numbers{
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.35;
+        letter-spacing: 0.05em;
+
+        color: $secondary-text-color;
+    }
+
+    .statistic__index{
+       color: $focus-color;
+    }
+
+    .statistic__description{
+        margin-top: 6px;
+
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+
+        color: $secondary-text-color;
+    }
+}
