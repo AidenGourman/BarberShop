@@ -1,16 +1,18 @@
 <div class="header__background">
-    <a href="/src/index.html">
-        <svg width="65px" height="55px">
-            <use href="/images/svg/svg-pack.svg#icon-Logo"></use>
-        </svg>
-    </a>
-    <button class="menu__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="40px" height="40px" aria-label="menu switcher">
-            <use class="icon__menu" href="/images/svg/svg-pack.svg#icon-menu"></use>
-        </svg>
-    </button>
+    <div class="header__line">
+        <a class="header__logo" href="/src/index.html">
+            <svg width="65px" height="55px">
+                <use href="/images/svg/svg-pack.svg#icon-Logo"></use>
+            </svg>
+        </a>
+        <button class="menu__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40px" height="40px" aria-label="menu switcher">
+                <use class="icon__menu" href="/images/svg/svg-pack.svg#icon-menu"></use>
+            </svg>
+        </button>
+    </div>
     <div class="modal">
-        <button class="close-button" type="button">
+        <button class="js-close-menu close__button" type="button">
             <svg width="40px" height="40px">
                 <use href="/images/svg/svg-pack.svg#icon-close"></use>
             </svg>
@@ -20,13 +22,13 @@
             <li class="navigation__item">
                 <a class="navigation__link" href="#">About us</a>
             </li>
-            <li>
+            <li class="navigation__item">
                 <a class="navigation__link" href="#">Services and prices</a>
             </li>
-            <li>
+            <li class="navigation__item">
                 <a class="navigation__link" href="#">Our masters</a>
             </li>
-            <li>
+            <li class="navigation__item">
                 <a class="navigation__link" href="#">Contacts</a>
             </li>
         </ul>
@@ -34,19 +36,17 @@
         <div class="contacts">
             <a class="contacts__number" href="tel:+380441111111">+38 044 111 1 1 11</a>
             <button type="button" class="contacts__button">
-                Online-appointment
+                ONLINE-APPOINTMENT
             </button>
         </div>
         <div class="network">
             <ul class="network__list">
-                <a href="https://www.instagram.com/">
                 <li class="network__item">
-                    Instagram
+                    <a class="network__link" href="https://www.instagram.com/">Instagram</a>
                 </li>
                 </a>
-                <a href="https://www.youtube.com/">
                 <li class="network__item">
-                    Youtube
+                    <a class="network__link" href="https://www.youtube.com/">Youtube</a>
                 </li>
                 </a>
             </ul>
@@ -54,14 +54,14 @@
     </div>
     <div class="hero">
         <p class="hero__subtitle">
-          A hair salon for men in Kyiv
+          A HAIR SALON FOR MEN IN KYIV
         </p>
         <h1 class="hero__title">
             BarberShop
         </h1>
         <p class="hero__text">
             We are experts in trendy men's haircuts.
-            We work quickly, carefully and tastefully.
+             <br>We work quickly, carefully and tastefully.
         </p>
     </div>
     <div class="slider">
