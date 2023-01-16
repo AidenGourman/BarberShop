@@ -1,9 +1,13 @@
 @media screen and(min-width:150px) {
     .article {
         width: 480px;
-        // padding: 84px 31px;
+        padding-top: 84px;
+        padding-bottom: 84px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .article__subtitle {
+        margin-left: 31px;
         margin-bottom: 44px;
         font-family: 'Open Sans';
         font-style: normal;
@@ -16,11 +20,19 @@
             border-bottom: 1px solid #303030;
         }
     }
+    .article__list {
+        width: max-content;
+        padding-left: 31px;
+    }
+    .article__item {
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        border: 3px solid #303030;
+        border-radius: 5px;
+        background-color: #303030;
+    }
     .article__item{
-        & > picture > img {
-            margin-right: auto;
-            margin-left: auto;
-        }
         &:not(:last-child) {
             margin-bottom: 30px;
         }
