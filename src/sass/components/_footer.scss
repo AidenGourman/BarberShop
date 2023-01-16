@@ -3,8 +3,10 @@
         width: 480px;
         margin-right: auto;
         margin-left: auto;
-        padding: 84px 31px;
         background-color: $footer-color;
+     }
+     .cellar__container {
+        padding: 84px 31px;
      }
      .cellar__title {
         margin-bottom: 44px;
@@ -18,7 +20,9 @@
         color: $primary-text-color;
      }
      .cellar__form {
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-right: auto;
         margin-left: auto;
      }
@@ -64,15 +68,17 @@
         & > textarea {
             background-color: $footer-color;
             margin-bottom: 44px;
-            width: 418px;
+            padding: 10px;
+            width: 400px;
             height: 60px;
-            border: 1px solid #9DA4BD66;
-            border-radius: 5px;
+            border: none;
+            border-bottom:1px solid #9DA4BD66;
             outline: none;
             resize: none;
             color: $primary-text-color;
             &:hover,
             &:focus {
+                border-radius: 5px;
                 border: 1px solid #fff;
             }
             font-family: 'Open Sans';
@@ -90,9 +96,67 @@
         padding: 12px 38px;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 20px;
+        margin-bottom: 44px;
         border: 1px solid $focus-color;
         background-color: $footer-color;
         color: $primary-text-color;
       }
+      .cellar__location {
+        display: flex;
+        flex-direction: column;
+      }
+      .cellar__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &:last-child {
+            margin-bottom: 44px;
+        }
+      }
+    .cellar__link {
+        display: flex;
+        align-items: center;
+        color: $four-text-color;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        letter-spacing: 0.02em;
+
+        &:hover,
+        &:focus {
+            color: $focus-color;
+            & > svg {
+                fill: $focus-color;
+            }
+        }
+
+        & > svg {
+            margin-right: 20px;
+        }
+    }
+    .cellar__label {
+        margin-bottom: 20px;
+        color: $primary-text-color;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.34;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        &::before {
+            border-bottom: 1px solid $four-text-color;
+        }
+    }
+    .cellar__text {
+        color: $four-text-color;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        letter-spacing: 0.02em;
+    }
 }
