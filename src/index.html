@@ -17,6 +17,7 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <span id="top"></span>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
     <include src="./partials/about.html"></include> 
@@ -27,5 +28,14 @@
     <include src="./partials/footer.html"></include>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/scrolltoo.js"></script>
+    <script src="./js/scrolltoup.js"></script>
+    <script src="./js/auto-text.js"></script>
+    <p id="back-top">
+      <a href="#top"><span>
+        <svg class="arrow-up" width="40px" height="40px">
+          <use href="/images/svg/svg-pack.svg#icon-arrow-up"></use>
+        </svg>
+      </span></a>
+    </p>
   </body>
 </html>
