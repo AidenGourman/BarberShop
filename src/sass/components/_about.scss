@@ -1,12 +1,14 @@
 @media screen and (min-width:150px) {
     .about {
         background-color: #FFFFFF;
-        padding: 91px 31px 84px 31px;
+            padding-top: 91px;
+            padding-bottom: 84px;
             width: 480px;
             margin-right: auto;
             margin-left: auto;
     }
     .about__subtitle { 
+        margin-left: 31px;
         margin-bottom: 20px;
         font-family: 'Open Sans';
         font-style: normal;
@@ -21,6 +23,7 @@
     }
     
     .about__title {
+        margin-left: 31px;
         width: 330px;
         margin-bottom: 20px;
         font-family: 'Raleway';
@@ -31,6 +34,7 @@
         letter-spacing: 0.05em;
     }
     .about__label {
+        margin-left: 31px;
         margin-bottom: 20px;
         font-family: 'Open Sans';
         font-style: normal;
@@ -40,6 +44,8 @@
         letter-spacing: 0.02em;
     }
     .about__text {
+        margin-left: 31px;
+        margin-right: 31px;
         margin-bottom: 40px;
         font-family: 'Open Sans';
         font-style: normal;
@@ -47,6 +53,10 @@
         font-size: 14px;
         line-height: 1.9;
         letter-spacing: 0.02em;
+    }
+
+    .about__btn{
+        margin-left: 31px;
     }
 
 }
