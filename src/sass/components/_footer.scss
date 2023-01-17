@@ -45,8 +45,8 @@
             text-transform: uppercase;
         }
         & > input {
-            width: 328px;
-            padding-left: 90px;
+            width: 418px;
+            padding-left: 10px;
             background-color: $footer-color;
             color: $primary-text-color;
             border: none;
@@ -58,7 +58,8 @@
             }
         }
         &:hover,
-        &:focus {
+        &:focus + .form__label,
+        .form__input:not(:placeholder-shown)+.form__label {
             color: $focus-color;
             & > label {
                 transform: translateY(-25);
@@ -66,6 +67,12 @@
             }
         }
       }
+
+    //   .form__input:focus + .form__label,
+    //   .form__input:not(:placeholder-shown) + .form__label{
+    //     transform: translateY(-50px);
+    //   }
+
       .cellar__textarea {
         & > textarea {
             background-color: $footer-color;
@@ -125,13 +132,11 @@
         font-size: 18px;
         line-height: 1.7;
         letter-spacing: 0.02em;
+        transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: $focus-color;
-            & > svg {
-                fill: $focus-color;
-            }
+        color: $focus-color;
         }
 
         & > svg {
