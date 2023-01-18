@@ -114,3 +114,29 @@
     }
 
 }
+
+@media screen and (min-width:768px) {
+    .team{
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    padding-top:100px;
+    padding-bottom: 36px;
+    background-color: $second-background-color;
+    }
+
+    .team__subtitle {
+    margin-left: 159px;
+    }
+
+    .team__title{
+    margin-left: 159px;
+    margin-bottom: 44px;
+    margin-top: 20px;
+    }
+    .team__image{
+       margin-left: 159px;
+       
+    }
+
+}
