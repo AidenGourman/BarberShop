@@ -79,6 +79,24 @@
     }
 }
 @media screen and (min-width:1200px) {
+    .about {
+        width: 1280px;
+    }
+    .about__container {
+        padding: 163px 91px 88px 55px;
+    }
+    .about__box {
+        padding-left: 64px;
+    }
+    .about__list {
+        display: flex;
+    }
+    .about__item {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
     .about__img {
         height: 430px;
     }
