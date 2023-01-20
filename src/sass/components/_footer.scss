@@ -34,19 +34,7 @@
         margin-bottom: 44px;
         color: #fff;
       }
-        .form__label {
-            position: absolute;
-            left: 0;
-            transform: translateY(0);
-            transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 1.4;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
+       
 
         .form__input {
             width: 418px;
@@ -74,6 +62,19 @@
             color: $focus-color;
         }
        
+        .form__label {
+            position: absolute;
+            left: 0;
+            transform: translateY(0);
+            transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.4;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
 
       .cellar__textarea {
         & > textarea {
