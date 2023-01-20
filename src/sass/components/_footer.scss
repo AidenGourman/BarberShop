@@ -37,7 +37,7 @@
        
 
         .form__input {
-            width: 418px;
+            width: 406px;
             padding-left: 10px;
             background-color: $footer-color;
             color: $primary-text-color;
@@ -81,7 +81,7 @@
             background-color: $footer-color;
             margin-bottom: 44px;
             padding: 10px;
-            width: 400px;
+            width: 398px;
             height: 60px;
             border: none;
             border-bottom:1px solid #9DA4BD66;
@@ -179,3 +179,5 @@
         letter-spacing: 0.02em;
     }
 }
+@media screen and(min-width:768px) {}
+@media screen and(min-width:1280px) {}
