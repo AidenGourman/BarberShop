@@ -4,13 +4,15 @@
             Online-appointment
         </h3>
         <form class="cellar__form">
-            <div class="cellar__name input__container">
-                <input class="form__input" type="text" name="name" id="name" placeholder="  ">
-                <label class="form__label" for="name">Name</label>
-            </div>
-            <div class="cellar__tel input__container">
-                <input class="form__input" type="tel" name="tel" id="tel" placeholder="  ">
-                <label class="form__label" for="tel">Telephone</label>
+            <div class="input__box">
+                <div class="cellar__name input__container">
+                    <input class="form__input" type="text" name="name" id="name" placeholder="  ">
+                    <label class="form__label" for="name">Name</label>
+                </div>
+                <div class="cellar__tel input__container">
+                    <input class="form__input" type="tel" name="tel" id="tel" placeholder="  ">
+                    <label class="form__label" for="tel">Telephone</label>
+                </div>
             </div>
             <div class="cellar__textarea">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Enter the text"></textarea>
@@ -22,42 +24,45 @@
         </div>
         <div class="cellar__box">
             <address class="cellar__location" id="contacts">
-                <h3 class="cellar__title">
-                    Contacts
-                </h3>
-                <ul class="cellar__list">
-                    <li class="cellar__item">
-                        <a class="cellar__link" href="https://goo.gl/maps/CBe9DDRovFkWphme9" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg width="16" height="18">
-                                <use href="/images/svg/svg-pack.svg#icon-map-pin"></use>
-                            </svg>
-                            67/7 Velyka Vasylkivska, Kyiv, Ukraine, 02000
-                        </a>
-                    </li>
-                    <li class="cellar__item">
-                        <a class="cellar__link" href="tel:+380441111111">
-                            <svg width="16" height="18">
-                                <use href="/images/svg/svg-pack.svg#icon-Shape"></use>
-                            </svg>
-                            +38 044 111 11 11
-                        </a>
-                    </li>
-                    <li class="cellar__item">
-                        <a class="cellar__link" href="mailto:barbershop@email.com">
-                            <svg width="16" height="18">
-                                <use href="/images/svg/svg-pack.svg#icon-mail-1"></use>
-                            </svg>
-                            barbershop@email.com
-                        </a>
-                    </li>
-                </ul>
+                <div class="location__container">
+                    <h3 class="cellar__title">
+                        Contacts
+                    </h3>
+                    <ul class="cellar__list">
+                        <li class="cellar__item">
+                            <a class="cellar__link" href="https://goo.gl/maps/CBe9DDRovFkWphme9" target="_blank" rel="noopener noreferrer">
+                                <svg width="40" height="40">
+                                    <use href="/images/svg/svg-pack.svg#icon-map-pin"></use>
+                                </svg>
+                                67/7 Velyka Vasylkivska, Kyiv, Ukraine, 02000
+                            </a>
+                        </li>
+                        <li class="cellar__item">
+                            <a class="cellar__link" href="tel:+380441111111">
+                                <svg width="24" height="24">
+                                    <use href="/images/svg/svg-pack.svg#icon-Shape"></use>
+                                </svg>
+                                +38 044 111 11 11
+                            </a>
+                        </li>
+                        <li class="cellar__item">
+                            <a class="cellar__link" href="mailto:barbershop@email.com">
+                                <svg width="24" height="24">
+                                    <use href="/images/svg/svg-pack.svg#icon-mail-1"></use>
+                                </svg>
+                                barbershop@email.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </address>
+           <div class="location__box">
             <p class="cellar__label subtitle--before">
                 Working hours
             </p>
             <p class="cellar__text">
                 Everyday from 9:00 to 22:00
             </p>
+           </div>
         </div>
 </footer>
