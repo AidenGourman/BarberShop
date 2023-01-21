@@ -46,4 +46,4 @@
 //     </p>
 //   </body>
    // html script
-{/* <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script> */}
+{/* <script src="http://code.jquery.com/jquery-latest.js" */}
