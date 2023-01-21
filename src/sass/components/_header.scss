@@ -41,7 +41,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(/images/background/backgroundimg2-mobile@x2.jpeg);
+        background-image: url(/images/background/backgroundimg2-mobile@2x.jpeg);
         }
 
         @media (min-device-pixel-ratio: 3),
@@ -64,7 +64,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(/images/background/backgroundimg3-mobile@x2.jpeg);
+        background-image: url(/images/background/backgroundimg3-mobile@2x.jpeg);
         }
 
         @media (min-device-pixel-ratio: 3),
@@ -348,7 +348,6 @@
         margin: auto;
         display: flex;
         width: 768px;
-        background-color: antiquewhite;
         
     }
 
@@ -415,7 +414,7 @@
 
     .navigation__list{
         display: flex;
-        margin-left: 22px;
+        margin-left: 10px;
     }
 
     .navigation__link{
@@ -439,12 +438,15 @@
 
     .contacts{
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         margin: 0px;
-        margin-left: 5px;
+        margin-left: 15px;
     }
 
     .contacts__number{
+        margin-top: 20px;
+
         font-size: 12px;
         line-height: 1.33;
         letter-spacing: 0.1em;
@@ -453,7 +455,7 @@
     }
 
     .contacts__button{
-        margin-top: 0px;
+        margin-top: 40px;
         height: 40px;
         width: 160px;
 
@@ -461,13 +463,207 @@
     }
 
     .network{
-        display: none;
+        margin: 0px;
+
+        position: absolute;
+        left: -79;
+        top: 340;
+    }
+
+    .network__list{
+        display: flex;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+
+    .network__link{
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+
+        &:before{
+         display: none;
+        }
+    }
+
+    
+    .network__item:not(:last-child){
+        margin-bottom: 40px;
     }
 
     .close__button, .menu__button{
         display: none;
     }
+}
 
+@media screen and (min-width:1280px) {
+    .slider {
+            overflow: hidden;
+            width: 1072px;
+            height: 672px;
+        }
+    
+        .slider__first {
+            background-image: url(/images/background/backgroundimg-desktop.jpeg);
+    
+            background-color: $second-background-color;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/images/background/backgroundimg-desktop@2x.jpeg);
+            }
+    
+            @media (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 192dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(/images/background/backgroundimg-desktop@3x.jpeg);
+            }
+        }
+    
+        .slider__second {
+            background-image: url(/images/background/backgroundimg2-desktop.jpeg);
+    
+            background-color: $second-background-color;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/images/background/backgroundimg2-desktop@2x.jpeg);
+            }
+    
+            @media (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 192dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(/images/background/backgroundimg2-desktop@3x.jpeg);
+            }
+        }
+    
+        .slider__third {
+            background-image: url(/images/background/backgroundimg3-desktop.jpeg);
+    
+            background-color: $second-background-color;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/images/background/backgroundimg3-desktop@2x.jpeg);
+            }
+    
+            @media (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 192dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(/images/background/backgroundimg3-desktop@3x.jpeg);
+            }
+        }
+    
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin: auto;
+        display: flex;
+        width: 1280px;
+        
+    }
 
+    .index{
+        width: 1072px;
+        height: 672px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+
+    .modal{
+        display: flex;
+        justify-content: space-between;
+        width: 1072px;
+    }
+
+    .navigation__list{
+        display: flex;
+        margin-left: 43px;
+    }
+
+    .navigation__item:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .contacts{
+        display: inline;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+    .contacts__button{
+        margin: 0px;
+    }
+
+    .contacts__number{
+        margin-right: 40px;
+    }
+
+      .hero__subtitle{
+        display: flex;
+        margin-left: 100px;
+        margin-top: 208px;
+ 
+        color: $four-text-color;
+
+        &::before {
+        content: "";
+        display: block;
+        margin-right: 21px;
+        width: 62px;
+        height: 6.5px;
+        border-bottom: 1px solid $four-text-color;
+        }
+    }
+
+    .hero__title{
+        margin-left: 100px;
+        margin-top: 20px;
+
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1.18;
+        letter-spacing: 0.05em;
+
+        color: $primary-text-color;
+    }
+
+    .hero__text{
+        margin-left: 100px;
+        margin-top: 20px;
+
+        font-size: 18px;
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+
+        color: $four-text-color;
+    }
+
+    .slider__buttons{
+        margin-top: 135px;
+    }
 
 }
